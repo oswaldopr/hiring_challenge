@@ -44,20 +44,32 @@ class FriendsList
     }
 
     /**
-     * Ids of users in the friends list
+     * Ids of users in the friends list, if given a prefix return a two-dimensional array with ids and keys
+     * @param string Prefix to return the key of users in the friends list
      * @return array
      */
-    public function getUserIds()
+    /*
+    * TIP FOR SPEED (when it really matters):
+    * The nested loops are slow, it's better implement the code into one, especially with a lot of data.
+    */
+    public function getUserIds($prefixKey = "")
     {
         $userIds = [];
+        //--to avoid walking the entire $userIds to get user keys--//
+        $userKeysIds = [];
 
         foreach ($this->data as $project) {
             foreach ($project['threads'] as $thread) {
                 array_push($userIds, $thread['other_party']['user_id']);
+                //--I don't know what is more fast (above or below)--//
+                $userKeysIds[] = $prefixKey . $thread['other_party']['user_id'];
             }
         }
 
-        return array_unique($userIds);
+        if(empty($prefixKey))
+            return array_unique($userIds);
+        else
+            return ["ids" => array_unique($userIds), "keys" => array_unique($userKeysIds)];
     }
 
     /**
@@ -78,3 +90,4 @@ class FriendsList
         return $this->data;
     }
 }
+?>

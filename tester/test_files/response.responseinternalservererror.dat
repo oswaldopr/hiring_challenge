@@ -1,0 +1,28 @@
+# TEST FILE FOR METHOD Response::responseInternalServerError()
+#
+# Here, you can define test values and expected values as result of test.
+# If you want you can delete these comments for the test.
+# Each line represents a test to apply. You can write as many lines as you want. Blank lines are ignored.
+# The arguments must be separated by sign &: arg1&arg2&...&argN
+# The result expected must be written at the end of line and begin with a equal sign: arg1&arg2=result
+#
+# STRUCTURE OF TESTS LINES
+#
+# For strings: "some literal string" or "" (empty string)
+# For arrays: [index1=>value1,index2=>value2] or [[index11=>value11],[index21=>value21]]
+# For boolean values: arg1=false or arg1&arg2=true or arg1&true=true
+# If no parameters or no result: null=80 or arg1&arg2=null
+# If you want to test with values by default: arg1&~&arg3&~=true or ~&~&~&~=false
+# IMPORTANT: If there are more or fewer parameters than expected then the test line will be discarded.
+#
+# Parameter             Array Optional Default Value
+#  message               no    yes      "Server error, can't connect."
+#
+# Return Value
+#  Integer: HTTP Code: 500
+~=404
+~=403
+null=500
+500=500
+"prueba con signo igual (=) y con el ampersand (&)"=500
+"prueba con signo igual (=) y con el ampersand (&)"=403

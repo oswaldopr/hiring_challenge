@@ -1,0 +1,56 @@
+# TEST RESULT FILE FOR METHOD Request::validate()
+#
+# Parameter             Array Optional Default Value
+#  host                  no    yes      ""
+#  port                  no    yes      ""
+#  domains               yes   yes      null
+#  blankReferrer         no    yes      false
+#  session               no    yes      ""
+#
+# Return Value
+#  Boolean: true success, false otherwise
+
+Total Lines Read: 36
+* Ignored Lines: 26
+* Error Lines:   4
+* Failed Tests:  2
+* Success Tests: 4
+
+STATUS    TEST/DESCRIPTION
+======    ================
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Tested    false => ~&~&~&~&~=true
+Tested    true => ~&~&~&~&~=false
+Error     Error in argument #3 (domains): it's not an array => ""&""&null&false&""=true
+Error     Error in argument #3 (domains): it's not an array => ""&""&null&false&""=false
+Tested    false => "1"&"0"&array()&null&"1"=true
+Tested    true => "1"&"0"&array()&null&"1"=false
+Error     Error in arguments: bad number of parameters => "1"&"0"&null&"1"=false
+Error     Error in arguments: bad number of parameters => "1"&"0"&array()&"1"=false
+Tested    true => "1"&"10"&array("www","com")&true&"1"=true
+Tested    true => "1"&"0"&array("www","com")&true&"1"=false

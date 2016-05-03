@@ -1,0 +1,46 @@
+# TEST RESULT FILE FOR METHOD Response::responseOK()
+#
+# Parameter             Array Optional Default Value
+#  data                  yes   no       N/A
+#
+# Return Value
+#  Integer: HTTP Code: 200 on success, 500 otherwise
+
+Total Lines Read: 30
+* Ignored Lines: 22
+* Error Lines:   5
+* Failed Tests:  1
+* Success Tests: 2
+
+STATUS    TEST/DESCRIPTION
+======    ================
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Error     Error in argument #1 (data): it's not an array => 500=500
+Error     Error in argument #1 (data): it's not an array => null=500
+Error     Error in argument #1 (data): it's not an array => ""=500
+Tested    true => array()=200
+Tested    true => array("id"=>1,"name"=>"jopr")=200
+Error     Error in argument #1 (data): syntax error, unexpected ',' => array(""=>,"name"=>"jopr")=500
+Tested    false => array(1,2)=500
+Error     Error in argument #1 (data): it's not optional => ~=500

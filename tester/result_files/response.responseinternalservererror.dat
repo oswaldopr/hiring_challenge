@@ -1,0 +1,44 @@
+# TEST RESULT FILE FOR METHOD Response::responseInternalServerError()
+#
+# Parameter             Array Optional Default Value
+#  message               no    yes      "Server error, can't connect."
+#
+# Return Value
+#  Integer: HTTP Code: 500
+
+Total Lines Read: 28
+* Ignored Lines: 22
+* Error Lines:   0
+* Failed Tests:  3
+* Success Tests: 3
+
+STATUS    TEST/DESCRIPTION
+======    ================
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Tested    false => ~=404
+Tested    false => ~=403
+Tested    true => null=500
+Tested    true => 500=500
+Tested    true => "prueba con signo igual (=) y con el ampersand (&)"=500
+Tested    false => "prueba con signo igual (=) y con el ampersand (&)"=403

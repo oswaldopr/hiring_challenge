@@ -1,0 +1,42 @@
+# TEST RESULT FILE FOR METHOD Response::responseNotFound()
+#
+# Parameter             Array Optional Default Value
+#  message               no    yes      "Friends list not available."
+#
+# Return Value
+#  Integer: HTTP Code: 404
+
+Total Lines Read: 26
+* Ignored Lines: 22
+* Error Lines:   0
+* Failed Tests:  2
+* Success Tests: 2
+
+STATUS    TEST/DESCRIPTION
+======    ================
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Ignored   Comment
+Tested    true => ~=404
+Tested    false => ~=500
+Tested    false => null=200
+Tested    true => "prueba con signo igual (=) y con el ampersand (&)"=404
